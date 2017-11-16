@@ -31,8 +31,8 @@ export default class App extends Component<{}> {
     return (
         <Router>
           <Scene key='root'>
-            <Scene key='home' component={Home} title='Home' />
-            <Scene key='chat' component={Chat} title='Chat' />
+            <Scene key='home' component={Home} title='Page 1' />
+            <Scene key='chat' component={Chat} title='Page 2' />
           </Scene>
         </Router>  
     );

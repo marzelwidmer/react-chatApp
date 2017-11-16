@@ -5,14 +5,14 @@ class Chat extends Component {
     render() {
         return (
             <View>
-                <Text style={styles.text}>Hello {this.props.name} </Text>
+                <Text style={styles.textChat}>Hello {this.props.name} </Text>
             </View>
         );
     }
 }
 
 const styles = StyleSheet.create({
-    text: {
+    textChat: {
       marginTop: 20,
       marginLeft: 20,
       fontSize: 20
