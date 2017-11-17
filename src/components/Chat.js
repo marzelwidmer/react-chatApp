@@ -5,7 +5,7 @@ class Chat extends Component {
     render() {
         return (
             <View>
-                <Text style={styles.textChat}>Hello {this.props.name} </Text>
+                <Text style={styles.textChat}>Hello {this.props.inputName} </Text>
             </View>
         );
     }

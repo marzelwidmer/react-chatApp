@@ -4,7 +4,7 @@ import { Actions } from 'react-native-router-flux';
 
 class Home extends Component {
     state ={
-        name : ''
+        inputName : ''
     }
     render() {
         return (
@@ -16,15 +16,16 @@ class Home extends Component {
                     placeholder='Johne Doe'
                     onChangeText={(text) =>{
                         this.setState({
-                            name : text
+                            inputName : text
                         })
                     }}
-                    value={this.state.name}
+                    value={this.state.inputName}
                 />
                 <TouchableOpacity onPress={() =>{
                         // navigate to second screen and pass it the name
+                       // alert(this.state.inputName);
                         Actions.chat({
-                            name : this.state.name
+                            inputName : this.state.inputName
                         })
                     }}
                 >
